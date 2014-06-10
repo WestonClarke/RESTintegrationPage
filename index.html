@@ -29,22 +29,24 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         
-        <div class='login'>
-  <h2>Guest Registration</h2>
- <input name='card' placeholder='Card Number' type='text'/>           
-  <input name='fname' placeholder='First Name' type='text'/>
-  <input name='lname' placeholder='Last Name' type='text'/>
-  <input name='adress' placeholder='Address' type='text'/>          
-  <input name='username' placeholder='Username' type='text'/>  
-  <input id='pw' name='password' placeholder='Password' type='password'/>
+    <div class='login'>
+          <h2>Guest Registration</h2>
+     <form name="ajaxform" id="ajaxform" action="ajax-form-submit.php" method="POST">
+        <input name='card' placeholder='Card Number' type='text'/>           
+         <input name='fname' placeholder='First Name' type='text'/>
+         <input name='lname' placeholder='Last Name' type='text'/>
+         <input name='adress' placeholder='Address' type='text'/>          
+         <input name='username' placeholder='Username' type='text'/>  
+         <input id='pw' name='password' placeholder='Password' type='password'/>
   <!--<div class='remember'>
     <input checked='' id='remember' name='remember' type='checkbox'/>
     <label for='remember'></label>Remember me
   </div>-->
-  <input type='submit' value='Sign in' method="ajax-post.php"/>
+         <input type='submit' value='Register' method="ajax-post.php"/>
+       </form>
   <!--<a class='forgot' href='#'>Forgot your password?</a>-->
-</div><!--
-        <form name="myform" id="myform" action="ajax-post.php">
+    </div><!--
+       <form name="myform" id="myform" action="ajax-post.php">
             Card Number: <input type="text" name="card"/> <br/>
             Address: <input type="text" name="fname"/> <br/>
             City: <input type="text" name="city"/> <br/>
