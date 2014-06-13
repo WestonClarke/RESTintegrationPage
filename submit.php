@@ -1,13 +1,13 @@
 <?php
+
     $url = "https://www.train.paytronix.com:1283/rest/12.2.0/enrollment/register.json";    
 	$content = json_encode("{
   		"authentication": "b2b",
  		 "client_id": "3FTmkQuXB6q8FoAcy2QHWOd42JAFCO9PREEnj_WHaK",
  		 "client_secret": "654fs@mnx4",
- 		 "merchantId": 60019,
- 		 "printedCardNumber": 6000201000924804,
+ 		 "merchantId": 777777,
+ 		 "printedCardNumber": 6000101001076184,
  		 "enforceUniqueFields": [
- 		   "email"
  		 ],
  		 "setUserFields": {
   		  "style": "typed",
@@ -25,7 +25,7 @@
  		   "style": "typed",
  		   "favoriteStore": [
  		     {
-            	"code": "01"
+            	"code": "02"
  		     }
  		   ]
  		 }
