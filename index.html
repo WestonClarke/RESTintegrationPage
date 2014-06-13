@@ -26,12 +26,15 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <!-- Added as jQuery Form Plugin-->
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+		<script type="text/javascript" src="js/application.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         
     <div class='login'>
           <h2>Guest Registration</h2>
-     <form name="ajaxform" id="ajaxform" action="ajax-form-submit.php" method="POST">
+     <form name="ajaxform" id="ajaxform" action="submit.php" method="POST">
         <input name='card' placeholder='Card Number' type='text'/>           
          <input name='fname' placeholder='First Name' type='text'/>
          <input name='lname' placeholder='Last Name' type='text'/>
@@ -42,8 +45,8 @@
     <input checked='' id='remember' name='remember' type='checkbox'/>
     <label for='remember'></label>Remember me
   </div>-->
-         <input type='submit' value='Register' method="ajax-post.php"/>
-       </form>
+         <input type='submit' value='Register'/>
+     </form>
   <!--<a class='forgot' href='#'>Forgot your password?</a>-->
     </div><!--
        <form name="myform" id="myform" action="ajax-post.php">
