@@ -1,3 +1,33 @@
+$('#submit').click(function(){
+   
+    $.post("submit.php", {printedCardNumber: $('#card').val(), username: $('username').val(), password: $('pw').val(), mobilePhone: $('mobilePhone').val()}).done(function(data){
+        
+        alert(data)
+        
+    })
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 //show password
 $(document).ready(function(){
@@ -6,7 +36,9 @@ $(document).ready(function(){
     }).blur(function(){
         this.type = "password";
     })   
+    
 });
+
 
 //Placeholder fixed for Internet Explorer
 $(function() {
@@ -39,3 +71,5 @@ $(function() {
 		});
 	}
 	});
+    
+    */

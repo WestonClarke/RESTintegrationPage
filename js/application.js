@@ -11,7 +11,7 @@ function setupAjaxForm(form_id, form_validations){
  
     // en/disable submit button
     var disableSubmit = function(val){
-        $(form + ' input[type=submit]').attr('disabled', val);
+        $(form + ' input[type=submit]').attr('enabled', val);
     };
  
     // setup loading message
@@ -52,7 +52,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    new setupAjaxForm('contact-us', function(){
+    new setupAjaxForm('ajaxform', function(){
         // field validations go here, make sure to return true (validates) / false (fails).
     });
 });
