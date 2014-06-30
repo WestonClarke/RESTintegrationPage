@@ -1,75 +1,27 @@
-$('#submit').click(function(){
-   
-    $.post("submit.php", {printedCardNumber: $('#card').val(), username: $('username').val(), password: $('pw').val(), mobilePhone: $('mobilePhone').val()}).done(function(data){
-        
-        alert(data)
-        
-    })
-    
-});
+$(document).ready(
+	function() 
+	{
 
+		$('#datepicker').datepicker( { dateFormat : "yy-mm-dd"}, {showAnim : "blind"} );
+		$('#submit').click( function() 
+		{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-//show password
-$(document).ready(function(){
-    $("#pw").focus(function(){
-        this.type = "text";
-    }).blur(function(){
-        this.type = "password";
-    })   
-    
-});
-
-
-//Placeholder fixed for Internet Explorer
-$(function() {
-	var input = document.createElement("input");
-	if(('placeholder' in input)==false) { 
-		$('[placeholder]').focus(function() {
-			var i = $(this);
-			if(i.val() == i.attr('placeholder')) {
-				i.val('').removeClass('placeholder');
-				if(i.hasClass('password')) {
-					i.removeClass('password');
-					this.type='password';
-				}			
-			}
-		}).blur(function() {
-			var i = $(this);	
-			if(i.val() == '' || i.val() == i.attr('placeholder')) {
-				if(this.type=='password') {
-					i.addClass('password');
-					this.type='text';
+			$.post( "ajax.php", 
+				//Javascript object key for POST variable
+				{
+					first_name : $("#first_name").val(),
+					last_name : $("#last_name").val(),
+					dob : $("#datepicker").datepicker().val(), 
+					user_name : $("#user_name").val(),
+					pass_word : $("#pass_word").val()
+				}, 
+				function( data )
+				{
+					$("#responseText").val( data );
 				}
-				i.addClass('placeholder').val(i.attr('placeholder'));
-			}
-		}).blur().parents('form').submit(function() {
-			$(this).find('[placeholder]').each(function() {
-				var i = $(this);
-				if(i.val() == i.attr('placeholder'))
-					i.val('');
-			})
+			);
+
 		});
+
 	}
-	});
-    
-    */
+);

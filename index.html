@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+CTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -15,8 +15,6 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
     </head>
@@ -31,27 +29,29 @@
 
         
     <div class='login'>
-          <h2>Guest Registration</h2>
-     <form name="ajaxform" id="ajaxform"  method="POST" action="submit.php">
-        <input name='card'  id='card' placeholder='Card Number' type='text'/>           
-         <input name='fname' id='fname' placeholder='First Name' type='text'/>
-         <input name='lname' id='lname' placeholder='Last Name' type='text'/>
-         <input name='mobilePhone' id='mobilePhone' placeholder='Mobile Phone' type='text'/>          
-         <input name='username' id='username' placeholder='Username' type='text'/>  
-         <input id='pw' name='password' placeholder='Password' type='password'/>
-         <input type='button' value='Register' id='submit'/>
-     </form>
+    <h2>Guest Registration</h2>
+     <form name="ajaxform" id="ajaxform"  method="POST" >
+               
+           <input name='fname' id='first_name' placeholder='First Name' type='text'/>
+           <input name='lname' id='last_name' placeholder='Last Name' type='text'/>
+           <input id='datepicker' name='dateOfBirth' placeholder='Date of Birth' type='text'/>    <input name='username' id='user_name' placeholder='Username' type='text'/>  
+           <input id='pass_word' name='password' placeholder='Password' type='password'/>
 
+           <input type='button' value='Register' id='submit'/>
+
+     </form>
+     <textarea id="responseText"></textarea>
     </div>
-        <!--
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>-->
-        <!-- Added as jQuery Form Plugin-->
-		<!--<script type="text/javascript" src="js/application.js"></script>
-        <script src="js/plugins.js"></script>-->
-        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="js/main.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+        <script type="text/javascript" src="js/main.js"></script>
         
     </body>
 </html>
+
+
